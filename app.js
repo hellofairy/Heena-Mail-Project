@@ -12,7 +12,8 @@ function handleSubmission() {
         letter.style.transform = 'translate(-50%, -50%)';
         letter.style.transition = "2s ease";
         letter.style.margin = "15px";
-        document.querySelector(".letter div").style.margin = "30px"; // "You've got mail"도 숨기기
+        document.querySelector(".letter div").style.height = "640px";
+        document.querySelector(".letter div").style.width = "840px";
 
         document.querySelector(".lid.one").style.transition = "opacity 0.5s ease"; // 불투명도 변화에 애니메이션 추가
         document.querySelector(".lid.one").style.opacity = "0"; // 불투명도를 0으로 설정하여 사라지게 함
@@ -49,7 +50,7 @@ function handleSubmission() {
         setTimeout(() => {
             // 텍스트 타이핑 효과 시작
             typeWriterEffect(message);
-        }, 1000);
+        }, 2000);
     }
 }
 
@@ -72,8 +73,8 @@ function typeWriterEffect(message) {
         if (i < message.length) {
             element.innerHTML += (message.charAt(i) === '\n') ? "<br>" : message.charAt(i);
             i++;
-            setTimeout(type, 10); // 타이핑 속도
-        }
+            setTimeout(type, 0); // 타이핑 속도
+        }         
     }
     type();
 }

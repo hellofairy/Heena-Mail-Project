@@ -19,7 +19,7 @@
   .wrapper {
     height: 200px;
     width: 300px;
-    background-color: #3760C9;
+    background-color: #7e7e7e;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@
   
   /* Lid when closed */
   .lid.one {
-    border-top: 100px solid #658ced;
+    border-top: 100px solid #7e7e7e;
     transform: rotateX(0deg);
     z-index: 3;
     transition-delay: 0.75s;
@@ -49,7 +49,7 @@
   
   /* Lid when opened */
   .lid.two {
-    border-top: 100px solid #3760C9;
+    border-top: 100px solid #7e7e7e;
     transform: rotateX(90deg);
     z-index: 1;
     transition-delay: 0.5s;
@@ -62,9 +62,9 @@
     top: 0;
     left: 0;
     border-top: 100px solid transparent;
-    border-right: 150px solid #C4DFF0;
-    border-bottom: 100px solid #C4DFF0;
-    border-left: 150px solid #a4d4f2;
+    border-right: 150px solid #c9c9c9;
+    border-bottom: 100px solid #c9c9c9;
+    border-left: 150px solid #a7a7a7;
     z-index: 3;
   }
   
@@ -84,7 +84,7 @@
   }
   
   .letter div {
-    text-align: center;
+    text-align: left;
     font-size: 15px;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -114,11 +114,11 @@ button {
     border-radius: 10px;
     width: 40px;
     color: white;
-    background-color: #3760C9;
-    border: 2px solid #3760C9;
+    background-color: #7e7e7e;
+    border: 2px solid #7e7e7e;
 }
 
 button:hover {
-    border: 2px solid #658ced;
-    background-color: #658ced;
+    border: 2px solid #b3b3b3;
+    background-color: #b3b3b3;
 }
